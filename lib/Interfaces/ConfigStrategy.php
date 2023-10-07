@@ -1,9 +1,9 @@
 <?php
 
-namespace Phoenix\Core\Interfaces;
+namespace Phoenix\Config\Interfaces;
 
-use Phoenix\Core\Exceptions\ConfigException;
-use Phoenix\Core\Exceptions\ConfigNotFoundException;
+use Phoenix\Config\Exceptions\ConfigException;
+use Phoenix\Config\Exceptions\ConfigNotFoundException;
 
 interface ConfigStrategy
 {
