@@ -3,7 +3,6 @@
 namespace Phoenix\Config\Interfaces;
 
 use Phoenix\Config\Exceptions\ConfigException;
-use Phoenix\Config\Exceptions\ConfigNotFoundException;
 
 interface ConfigStrategy
 {
