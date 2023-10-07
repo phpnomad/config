@@ -1,5 +1,5 @@
 {
-    "name": "phoenix/repository",
+    "name": "phoenix/config",
     "description": "",
     "type": "library",
     "homepage": "https://github.com/phoenix/core",
@@ -16,7 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Phoenix\\Core\\": "lib/"
+            "Phoenix\\Config\\": "lib/"
         }
     },
     "autoload-dev": {
