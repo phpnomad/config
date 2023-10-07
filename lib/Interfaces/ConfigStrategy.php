@@ -1,7 +1,26 @@
 <?php
+
 namespace Phoenix\Core\Interfaces;
+
+use Phoenix\Core\Exceptions\ConfigException;
 
 interface ConfigStrategy
 {
-    public function register(array $configData);
+    /**
+     * Registers a top-level set of configuration data.
+     *
+     * @param string $key The top-level key identifying the contents of this config.
+     * @param array $configData The data.
+     * @return $this
+     * @throws ConfigException
+     */
+    public function register(string $key, array $configData);
+
+    /**
+     * Gets a single piece of config data, if it exists.
+     * @param string $key A dot-notated string used to look up the config value.
+     * @param array|string|float|int|bool|null $default Default value to return if this config does not exist.
+     * @return array|string|float|int|bool|null
+     */
+    public function get(string $key, $default = null);
 }
