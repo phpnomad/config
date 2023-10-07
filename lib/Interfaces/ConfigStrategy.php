@@ -18,11 +18,17 @@ interface ConfigStrategy
     public function register(string $key, array $configData);
 
     /**
+     * Checks to see if a single piece of config data exists.
+     * @param string $key A dot-notated string used to look up the config value.
+     * @return bool
+     */
+    public function has(string $key): bool;
+
+    /**
      * Gets a single piece of config data, if it exists.
      * @param string $key A dot-notated string used to look up the config value.
      * @param array|string|float|int|bool|null $default Default value to return if this config does not exist.
      * @return array|string|float|int|bool|null
-     * @throws ConfigNotFoundException
      */
     public function get(string $key, $default = null);
 }
