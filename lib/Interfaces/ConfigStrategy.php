@@ -3,6 +3,7 @@
 namespace Phoenix\Core\Interfaces;
 
 use Phoenix\Core\Exceptions\ConfigException;
+use Phoenix\Core\Exceptions\ConfigNotFoundException;
 
 interface ConfigStrategy
 {
@@ -21,6 +22,7 @@ interface ConfigStrategy
      * @param string $key A dot-notated string used to look up the config value.
      * @param array|string|float|int|bool|null $default Default value to return if this config does not exist.
      * @return array|string|float|int|bool|null
+     * @throws ConfigNotFoundException
      */
     public function get(string $key, $default = null);
 }
