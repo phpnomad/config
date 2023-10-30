@@ -1,8 +1,8 @@
 <?php
 
-namespace Phoenix\Config\Interfaces;
+namespace PHPNomad\Config\Interfaces;
 
-use Phoenix\Config\Exceptions\ConfigException;
+use PHPNomad\Config\Exceptions\ConfigException;
 
 interface ConfigStrategy
 {
